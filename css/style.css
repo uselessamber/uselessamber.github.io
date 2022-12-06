@@ -1,0 +1,17 @@
+header {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#header1 {
+    text-shadow: 10px;
+}
+
+#header2{
+    font-family: Arial;
+    font-size: 10px;
+}
+
+body {
+    background-color: lightpink;
+}
