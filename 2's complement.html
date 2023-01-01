@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            2's Complement. What is it?
+        </title>
+    </head>
+    <body>
+        <h1>
+            <b>
+                2's Complement. What is it?
+            </b>
+        </h1>
+        <h3>
+            I. How is number represented in a computer?
+        </h3>
+        <p>
+            &emsp;Due to a computer's limitation, a computer cannot count in base 10 as we only have 2 states to work with (ON and OFF). As such, computer counts in base 2 (each digit represent the amount of 2 to the power of digit place instead of 10). As such, 10 in base 2 would become 1010, meaning 0 * 2<sup>0</sup> + 1 * 2<sup>1</sup> + 0 * 2<sup>2</sup> + 1 * 2<sup>3</sup> = 2 + 8 = 10. 
+        </p>
+        <h3>
+            II. How does computer represent negative number?
+        </h3>
+        <p>
+            &emsp;In order to represent negative number using binary and a limited number of bits, we use a system called 2's complement.
+        </p>
+        <p>
+            &emsp;In short: The left most bit of a binary number represent its sign:
+        </p>
+        <p>
+            &emsp;&emsp;- 0 for positive
+        </p>
+        <p>
+            &emsp;&emsp;- 1 for negative
+        </p>
+        <h3>
+            III. How do you get the 2's complement of a specific number?
+        </h3>
+        <p>
+            &emsp;To get the 2's complement of a number, you flip all of the number's bits from 1 --> 0 and 0 --> 1 and add 1 to the new number. 
+        </p>
+        <p>
+            &emsp;<b>Example:</b> to get the 2's complements of the number 11.
+        </p>
+        <p>
+            &emsp;&emsp;- Binary representation of the number 11 in a 32 bits system is: 0000 0000 0000 0000 0000 0000 0000 1011
+        </p>
+        <p>
+            &emsp;&emsp;- Step 1: Flip all of the number's bit 1 --> 0 and 0 --> 1: 1111 1111 1111 1111 1111 1111 1111 0100
+        </p>
+        <p>
+            &emsp;&emsp;- Step 2: Add 1 to the new number: 1111 1111 1111 1111 1111 1111 1111 0101
+        </p>
+        <p>
+            &emsp;&emsp;- Thus 1111 1111 1111 1111 1111 1111 1111 0101 represents -11.
+        </p>
+        <p>
+            &emsp;&emsp;- <b>To verify</b> you add the original number and the new number together: 0000 0000 0000 0000 0000 0000 0000 1011 + 1111 1111 1111 1111 1111 1111 1111 0101 = 0000 0000 0000 0000 0000 0000 0000 0000 (11 + (-11) = 0)
+        </p>
+    </body>
+</html>

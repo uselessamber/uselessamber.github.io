@@ -28,12 +28,12 @@ body {
     text-indent: 50px;
 }
 
-#to-github {
+#button {
     font-family: Arial;
     font-size: 15px;
 }
 
-#to-github:link, #to-github:visited {
+#button:link, #button:visited {
     background-color: white;
     color: black;
     border: 2px solid pink;
@@ -42,6 +42,6 @@ body {
     display: inline-block;
 }
 
-#to-github:hover, #to-github:active {
+#button:hover, #button:active {
     background-color: pink;
 }
